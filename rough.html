@@ -165,10 +165,12 @@
 
         const rc = rough.canvas(div);
 
-        var left = 10;
+        var left = 15;
         var top = 25;
         var size = 20;
         var ctx = div.getContext('2d');
+        ctx.fillStyle = 'white';
+        ctx.fillText("WORLD'S BIGGEST EXPORTS", 25, 10);
         for (var color in colors) {
             var rgb = hexToRgb(colors[color].color);
             var c = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
